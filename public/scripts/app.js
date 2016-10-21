@@ -69,15 +69,14 @@ var data = [
 
 
   function createTweetElement(tweet) {
-    console.log("***", tweet)
     var $tweet = $('<article>').addClass('tweet');
 
     var $avatar = $('<img src="' + tweet.user.avatars.small + '" width="50px" height="50px" />');
     var $name = $('<h4>' + tweet.user.name + '</h4>');
     var $handle = $('<h5>' + tweet.user.handle + '</h5></header>');
     var $content = $('<p>' + tweet.content.text + '</p>')
-    var tweettime = new Date(tweet.created_at)
-    var $footer = $('<footer>' + tweettime  + '<span class="glyphicon glyphicon-flag"></span><span class="glyphicon glyphicon-retweet"></span><span class="glyphicon glyphicon-heart"></span></footer>')
+    var tweettime = Math.floor(((Date.now() - tweet.created_at) / 86400000));
+    var $footer = $('<footer>' + tweettime + " days ago..." +'<span class="glyphicon glyphicon-flag"></span><span class="glyphicon glyphicon-retweet"></span><span class="glyphicon glyphicon-heart"></span></footer>')
 
     var $header = $('<header></header>');
 
@@ -101,7 +100,7 @@ var data = [
     method: 'post',
     data: $(this).serialize(),
     success: function (data) {
-      //load all weets again
+      //load all tweets again
       renderTweetsFromServer();
     },
     error: function (data) {
