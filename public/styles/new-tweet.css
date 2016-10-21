@@ -1,0 +1,113 @@
+form textarea {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  resize: none;
+}
+
+h2 {
+  padding-top: 0px;
+  text-align: center;
+ border-bottom: 1px solid black;
+
+  margin: 5px auto;
+  padding-bottom: 5px;
+}
+
+section.new-tweet {
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: #d3d3d3;
+    padding: 1em 2em;
+    width: 400px;
+    height: 150px;
+    padding-bottom: 20px
+}
+ #tweets-container {
+    width: 400px;
+    margin: auto;
+}
+
+span.counter {
+  float: right;
+  padding-right: 0;
+}
+
+.error {
+  color: #FF0000;
+}
+
+article.tweet {
+  padding left: 5px;
+  margin: 1em auto;
+  border-radius: 10px;
+  border: 2px black solid;
+  background-color: #d3d3d3;
+  /*padding: 2em;*/
+  width: 400px;
+}
+
+article.tweet:hover {
+  background-color: white;
+}
+
+article header {
+  border-radius: 10px 10px 0px 0px;
+  background-color: gray;
+  font-size: 30px;
+  padding-left: 5px;
+  height: 70px;
+}
+article footer {
+  border-top: 1px solid black;
+  padding-top: 15px
+  vertical-align: bottom;
+  padding-left: 5px;
+}
+article img {
+  float: left;
+  border-radius: 25px;
+}
+
+p {
+  padding: 10px;
+}
+
+h4{
+  padding: 0px;
+  float:left;
+  margin: 0px;
+  padding-top: 15px;
+}
+h5 {
+  float: right;
+  font-size: 15px;
+  padding-top: 18px;
+  margin: 0px;
+  padding-right:10px;
+}
+footer span.glyphicon {
+  float: right;
+  padding-right: 5px;
+  visibility: visible;
+}
+footer span.glyphicon:hover {
+  color: #e43df0;
+
+}
+
+button {
+  height: 60px;
+  float: right;
+  border-radius: 10px;
+  border: 2px black solid;
+  margin-top: 7px;
+}
+button:hover {
+  color: #454545;
+}
+

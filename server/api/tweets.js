@@ -29,6 +29,7 @@ module.exports = function(db) {
       created_at: Date.now()
     };
     db.saveTweet(tweet);
+    console.log("saving tweet", tweet);
     return res.send();
   });
 
